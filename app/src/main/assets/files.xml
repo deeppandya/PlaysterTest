@@ -1,0 +1,85 @@
+<rss xmlns:cbc="http://www.cbc.ca/rss/cbc" version="2.0">
+    <channel>
+        <title>
+            <![CDATA[ CBC | Top Stories News ]]>
+        </title>
+        <link>http://www.cbc.ca/news/?cmp=rss</link>
+        <description>
+            <![CDATA[ FOR PERSONAL USE ONLY ]]>
+        </description>
+        <language>en-ca</language>
+        <lastBuildDate>Sun, 9 Apr 2017 17:47:12 EDT</lastBuildDate>
+        <copyright>
+            <![CDATA[
+Copyright: (C) Canadian Broadcasting Corporation, http://www.cbc.ca/aboutcbc/discover/termsofuse.html#Rss
+]]>
+        </copyright>
+        <docs>
+            <![CDATA[ http://www.cbc.ca/rss/ ]]>
+        </docs>
+        <image>
+            <title>CBC.ca</title>
+            <url>http://www.cbc.ca/rss/image/cbc_144.gif</url>
+            <link>http://www.cbc.ca/news/?cmp=rss</link>
+        </image>
+        <item cbc:type="story" cbc:deptid="2.637" cbc:syndicate="true">
+            <title>
+                <![CDATA[
+'Salt in the wound': Couple bumped from Air Canada flight booked months in advance
+]]>
+            </title>
+            <link>
+                http://www.cbc.ca/news/business/air-canada-bumping-overbooking-airline-1.4060820?cmp=rss
+            </link>
+            <guid isPermaLink="false">1.4060820</guid>
+            <pubDate>Sun, 9 Apr 2017 05:00:00 EDT</pubDate>
+            <author>Sophia Harris</author>
+            <category>News/Business</category>
+            <description>
+                <![CDATA[
+<img src='https://i.cbc.ca/1.4060877.1491601997!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_460/kathryn-kelly-and-neil-crone-key-west-air-canada.jpg' alt='Kathryn Kelly and Neil Crone Key West Air Canada' width='460' title='Kathryn Kelly and Neil Crone finally made it to Florida--12 hours later than expected due to being bumped from their flight. ' height='259' /> <p>Neil Crone and his partner booked their flight from Toronto to Miami more than two months in advance. But when they checked in, they discovered they were being bumped due to an overbooked flight. They waited 12 hours for another flight.</p>
+]]>
+            </description>
+        </item>
+        <item cbc:type="story" cbc:deptid="2.641" cbc:syndicate="true">
+            <title>
+                <![CDATA[
+Bodies of 4 missing hikers recovered, 1 still missing after falling from B.C. mountain
+]]>
+            </title>
+            <link>
+                http://www.cbc.ca/news/canada/british-columbia/lions-bay-search-resumes-1.4062976?cmp=rss
+            </link>
+            <guid isPermaLink="false">1.4062976</guid>
+            <pubDate>Sun, 9 Apr 2017 12:16:22 EDT</pubDate>
+            <author>Matt Meuse</author>
+            <category>News/Canada/British Columbia</category>
+            <description>
+                <![CDATA[
+<img src='https://i.cbc.ca/1.4063149.1491773271!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_460/mount-harvey.jpg' alt='Mount Harvey' width='460' title='Four hikers are dead and another is missing after a cornice collapsed on the peak of B.C.&#39;s Mount Harvey, sending them tumbling down the mountain&#39;s north face. The mountain is seen here from Bowen Island, to the southwest.' height='259' /> <p>Search and rescue workers have recovered the bodies of four of the five hikers who went missing on Saturday after a cornice collapsed on the peak of Mount Harvey in southwestern B.C., sending them tumbling down the mountain's north face.</p>
+]]>
+            </description>
+        </item>
+        <item cbc:type="story" cbc:deptid="2.651" cbc:syndicate="true">
+            <title>
+                <![CDATA[
+Missing Manitoba woman Christine Wood's disappearance now a homicide
+]]>
+            </title>
+            <link>
+                http://www.cbc.ca/news/canada/manitoba/christine-wood-homicide-arrest-1.4062332?cmp=rss
+            </link>
+            <guid isPermaLink="false">1.4062332</guid>
+            <pubDate>Sat, 8 Apr 2017 11:33:10 EDT</pubDate>
+            <author>Caroline Barghout</author>
+            <category>News/Canada/Manitoba</category>
+            <description>
+                <![CDATA[
+<img src='https://i.cbc.ca/1.3767299.1474126318!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_460/christine-wood.jpg' alt='Christine Wood' width='460' title='The family of Christine Wood is &#39;overwhelmed&#39; by the community support after a fundraiser in Thompson raised over $5, 000 for their living costs and search.
+
+ ' height='259' /> <p>Winnipeg police have arrested and charged a 30-year-old man in connection with the death of Christine Wood, who disappeared last summer.</p>
+]]>
+            </description>
+        </item>
+    </channel>
+</rss>

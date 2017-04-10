@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PlaysterTest</string>
+    <string name="getting_news">Getting news ...</string>
+    <string name="title">Title : </string>
+    <string name="pubdate">Pub Date : </string>
+    <string name="author">Author : </string>
+</resources>
