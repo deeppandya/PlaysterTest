@@ -5,5 +5,7 @@ package mainpackage.playstertest.support;
  */
 
 public class Scopes {
-    public static final String MAINVIEW = "history";
+
+    public static final String APP = "app";
+    public static final String MAINVIEW = "main_view";
 }

@@ -59,15 +59,7 @@ public class GetNewsFeedsFromWebsiteAsyncTask extends AsyncTask<Void, Void, Docu
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             xmlDocument = documentBuilder.parse(inputStream);
-        } catch (ProtocolException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
+        } catch (ParserConfigurationException | IOException | SAXException e) {
             e.printStackTrace();
         }
 
@@ -113,14 +105,5 @@ public class GetNewsFeedsFromWebsiteAsyncTask extends AsyncTask<Void, Void, Docu
         NodeList nodeList=element.getElementsByTagName(tag).item(0).getChildNodes();
         Node node = nodeList.item(1);
         return node.getNodeValue();
-    }
-
-    private String getCharacterDataFromElement(Node child) {
-        // TODO Auto-generated method stub
-        if (child instanceof CharacterData) {
-            CharacterData cd = (CharacterData) child;
-            return cd.getData();
-        }
-        return "";
     }
 }

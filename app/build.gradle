@@ -9,14 +9,18 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    useLibrary 'org.apache.http.legacy'
+
     repositories {
         jcenter()
     }
@@ -42,6 +46,8 @@ dependencies {
     compile 'com.thefinestartist:finestwebview:1.2.7'
 
     compile 'com.squareup.mortar:mortar:0.20'
+
+    compile 'com.android.support:multidex:1.0.1'
 
     testCompile 'junit:junit:4.12'
 }

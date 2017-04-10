@@ -11,6 +11,8 @@ import android.support.v7.widget.RecyclerView;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 
+import com.thefinestartist.finestwebview.FinestWebView;
+
 import java.util.List;
 
 import mainpackage.playstertest.R;
@@ -40,7 +42,8 @@ public class MainActivity extends AppCompatActivity implements IMainView{
 
         setViews();
 
-        storyListAdapter = new StoryListAdapter(this);
+        storyListAdapter = new StoryListAdapter(this,this);
+
         mainViewPresenter.getNewsStory();
 
     }
@@ -62,22 +65,6 @@ public class MainActivity extends AppCompatActivity implements IMainView{
     public void onStop() {
         super.onStop();
         hideProgressDialog();
-    }
-
-    @Override
-    public Object getSystemService(@NonNull String name) {
-
-        MortarScope activityScope = MortarScope.findChild(getApplicationContext(), Scopes.MAINVIEW);
-
-        if (activityScope == null) {
-            activityScope = MortarScope.buildChild(getApplicationContext()) //
-                    .withService(BundleServiceRunner.SERVICE_NAME, new BundleServiceRunner())
-                    .withService(Scopes.MAINVIEW, new MainViewPresenter())
-                    .build(Scopes.MAINVIEW);
-        }
-
-        return activityScope.hasService(name) ? activityScope.getService(name)
-                : super.getSystemService(name);
     }
 
     @Override
@@ -111,5 +98,27 @@ public class MainActivity extends AppCompatActivity implements IMainView{
         if (mProgressDialog != null && mProgressDialog.isShowing()) {
             mProgressDialog.dismiss();
         }
+    }
+
+    @Override
+    public void openStoryInWebView(Story story) {
+        new FinestWebView.Builder(getContext()).titleDefault(story.getTitle())
+                .show(story.getLink());
+    }
+
+    @Override
+    public Object getSystemService(@NonNull String name) {
+
+        MortarScope activityScope = MortarScope.findChild(getApplicationContext(), Scopes.MAINVIEW);
+
+        if (activityScope == null) {
+            activityScope = MortarScope.buildChild(getApplicationContext()) //
+                    .withService(BundleServiceRunner.SERVICE_NAME, new BundleServiceRunner())
+                    .withService(Scopes.MAINVIEW, new MainViewPresenter())
+                    .build(Scopes.MAINVIEW);
+        }
+
+        return activityScope.hasService(name) ? activityScope.getService(name)
+                : super.getSystemService(name);
     }
 }

@@ -12,5 +12,4 @@ public interface GetNewsFeedsFromWebsiteListener {
 
     void beforeGetNewsFeedsFromWebsite();
     void afterGetNewsFeedsFromWebsite(List<Story> storyList);
-
 }

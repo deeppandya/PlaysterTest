@@ -3,8 +3,6 @@ package mainpackage.playstertest.adapter;
 import android.content.Context;
 import android.os.Build;
 import android.support.v7.widget.RecyclerView;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +10,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.thefinestartist.finestwebview.FinestWebView;
 
 import java.util.List;
 
 import mainpackage.playstertest.R;
+import mainpackage.playstertest.iviews.IMainView;
 import mainpackage.playstertest.model.Story;
 
 /**
@@ -27,13 +25,14 @@ public class StoryListAdapter extends RecyclerView.Adapter<StoryListAdapter.Stor
 
     private Context mContext;
     private List<Story> storyList;
+    private IMainView mainView;
 
     public class StoryViewHolder extends RecyclerView.ViewHolder {
         private TextView title, pubDate,author;
         private ImageView imgStory;
         private View mainView;
 
-        public StoryViewHolder(View view) {
+        private StoryViewHolder(View view) {
             super(view);
 
             mainView=view;
@@ -47,8 +46,9 @@ public class StoryListAdapter extends RecyclerView.Adapter<StoryListAdapter.Stor
     }
 
 
-    public StoryListAdapter(Context mContext) {
+    public StoryListAdapter(Context mContext,IMainView mainView) {
         this.mContext = mContext;
+        this.mainView=mainView;
     }
 
     @Override
@@ -76,9 +76,7 @@ public class StoryListAdapter extends RecyclerView.Adapter<StoryListAdapter.Stor
         holder.mainView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new FinestWebView.Builder(mContext).titleDefault(story.getTitle())
-                        .show(story.getLink());
-
+                mainView.openStoryInWebView(story);
             }
         });
 

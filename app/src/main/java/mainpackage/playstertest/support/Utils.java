@@ -15,13 +15,12 @@ public class Utils {
     public static final String AUTHOR="author";
     public static final String DESCRIPTION="description";
 
-
     public static final String CBCLINK = "http://www.cbc.ca/cmlink/rss-topstories";
     public static final String LINK = "link";
 
     public static String getImageUrlFromNode(String imgTag){
         Matcher matcher = Pattern.compile("<img src=\'([^\']+)").matcher(imgTag);
-        while (matcher.find()) {
+        if (matcher.find()) {
             System.out.println("img url: " + matcher.group(1));
             return matcher.group(1);
         }
