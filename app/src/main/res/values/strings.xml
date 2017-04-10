@@ -4,4 +4,7 @@
     <string name="title">Title : </string>
     <string name="pubdate">Pub Date : </string>
     <string name="author">Author : </string>
+    <string name="no_internet">No internet Connection</string>
+    <string name="no_internet_msg">Please turn on internet connection to continue</string>
+    <string name="close">Close</string>
 </resources>

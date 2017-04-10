@@ -4,8 +4,6 @@ import android.app.Application;
 import android.content.Context;
 import android.content.IntentFilter;
 import android.support.multidex.MultiDex;
-
-import mainpackage.playstertest.receiver.NetworkStateReceiver;
 import mainpackage.playstertest.support.Scopes;
 import mortar.MortarScope;
 
